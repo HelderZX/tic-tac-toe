@@ -22,7 +22,7 @@
 <body>
     <div class="container">
         <h1>TIC-TAC-TOE</h1>
-        <button class="play" onclick="window.location.href='home.php'"><i class="fa-sharp fa-solid fa-house"></i></button>
+        <button class="play" onclick="window.location.href='index.php'"><i class="fa-sharp fa-solid fa-house"></i></button>
         <div class="mid-container">
             <div id="player1" class="player your-time">
                 <div class="player-symbol"><p class="symbol">X</p></div>
