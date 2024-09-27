@@ -3,11 +3,14 @@ const buttonPlay = document.getElementById('btn-play');
 if(buttonPlay)
 buttonPlay.addEventListener('click', function(event) {
     event.preventDefault();
-    let player1 = document.getElementById('input-player1').value;
-    let player2 = document.getElementById('input-player2').value;
+    let $player1 = document.getElementById('input-player1');
+    let $player2 = document.getElementById('input-player2');
+
+    let player1Name = $player1.value == "" ? "jogador1" : $player1.value;
+    let player2Name = $player2.value == "" ? "jogador2" : $player2.value;
     
-    sessionStorage.setItem('player1', player1);
-    sessionStorage.setItem('player2', player2);
+    sessionStorage.setItem('player1', player1Name);
+    sessionStorage.setItem('player2', player2Name);
 
     window.location.href = 'game.html';
 });

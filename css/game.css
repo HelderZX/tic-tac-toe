@@ -1,0 +1,95 @@
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(var(--grid-size) + 50px);
+    margin: 0 150px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: var(--grid-size);
+    margin: 25px;
+    border: var(--border-size) solid var(--color-outline);
+    padding: var(--box-padding);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-darker1);
+    box-shadow: 0 0 20px var(--color-bg-darker3);
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--box-size);
+    height: var(--box-size);
+    background-color: var(--color-bg-darker1);
+}
+
+.box:nth-child(even){
+    background-color: var(--color-bg-darker2);
+}
+
+.box.win{
+    background-color: var(--color-red-base);
+    border: calc(var(--border-size) * 2) solid var(--color-outline);
+}
+
+.box:hover{
+    border: calc(var(--border-size) * 2) solid var(--color-outline);
+}
+
+.one{
+    border-radius: var(--border-radius) 0 0 0;
+    border-right: var(--border-size) var(--border-style) var(--color-outline);
+    border-bottom: var(--border-size) var(--border-style) var(--color-outline);
+}
+
+.two{
+    border-bottom: var(--border-size) var(--border-style) var(--color-outline);
+} 
+
+.three{
+    border-radius: 0 var(--border-radius) 0 0;
+    border-left: var(--border-size) var(--border-style) var(--color-outline);
+    border-bottom: var(--border-size) var(--border-style) var(--color-outline);
+}
+
+.four{
+    border-right: var(--border-size) var(--border-style) var(--color-outline);
+}
+
+.six{
+    border-left: var(--border-size) var(--border-style) var(--color-outline);
+} 
+
+.seven{
+    border-radius: 0 0 0 var(--border-radius);
+    border-right: var(--border-size) var(--border-style) var(--color-outline);
+    border-top: var(--border-size) var(--border-style) var(--color-outline);
+}
+
+.eight{
+    border-top: var(--border-size) var(--border-style) var(--color-outline);
+} 
+
+.nine{
+    border-radius: 0 0 var(--border-radius) 0;
+    border-left: var(--border-size) var(--border-style) var(--color-outline);
+    border-top: var(--border-size) var(--border-style) var(--color-outline);
+}
+
+@media only screen and (max-width: 700px) {
+    .player .player-symbol{
+        display: none;
+    }
+
+    .player.your-time .name{
+        border-radius: var(--border-radius) var(--border-radius) var(--border-radius) var(--border-radius);
+    }
+}
