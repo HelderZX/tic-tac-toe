@@ -7,8 +7,8 @@
     --border-radius: 20px;
 
     /* COLORS */
-    --color-outline: #B9C6AE;
-    --color-bg-lighter3: #B9C6AE;
+    --color-outline: #f0f0f0;
+    --color-bg-lighter3: #dadada;
     --color-bg-lighter2: #8A95A5;
     --color-bg-lighter1: #8A95A5;
     --color-bg-base: #565E6F;
@@ -98,6 +98,7 @@ h1{
 }
 
 button.play:hover{
+    cursor: pointer;
     background-color: var(--color-bg-darker2);
 }
 
